@@ -1,0 +1,1 @@
+# postgres-persist-psql-history
