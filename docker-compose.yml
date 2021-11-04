@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    build: .
+    container_name: 'postgres-persist-psql-history'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres-psqlhistory:/commandhistory
+volumes:
+  postgres-psqlhistory:
+    external: true
